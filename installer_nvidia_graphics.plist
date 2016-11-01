@@ -21,13 +21,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>CpuPM</string>
+				<string>Cpu0Ist</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>CpuPM</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -41,7 +41,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0</string>
+		<string>-v dart=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -90,8 +90,6 @@
 		<dict>
 			<key>FixOwnership</key>
 			<false/>
-			<key>HighCurrent</key>
-			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>
@@ -104,8 +102,8 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>Windows</string>
 			<string>\EFI\BOOT\BOOTX64.EFI</string>
+			<string>Windows</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -147,8 +145,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>InjectEDID</key>
-		<false/>
 		<key>NvidiaSingle</key>
 		<false/>
 	</dict>
@@ -176,11 +172,15 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>RXh0ZXJuYWw=</data>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>SW50ZXJuYWw=</data>
+				<data>
+				SW50ZXJuYWw=
+				</data>
 			</dict>
 		</array>
 	</dict>
