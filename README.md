@@ -4,3 +4,5 @@ Credits to RehabMan for his support on this project.
 
 
 For Native Powermanagement you will need to generate a SSDT using ssdtPRGen. ssdtPRGen can be downloaded from https://github.com/Piker-Alpha/ssdtPRGen.sh.
+
+Link to written up guide https://voiletdragon.wordpress.com
