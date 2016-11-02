@@ -20,13 +20,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
+					<data>X09TSQ==</data>
 					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
+					<data>WE9TSQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -115,7 +111,7 @@
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
-		<string>Nothing</string>
+		<string>VBoxHfs</string>
 	</array>
 	<key>GUI</key>
 	<dict>
@@ -191,15 +187,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PYMZ1BE=
-				</data>
+				<data>PYMZ1BE=</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				PQAAAAA=
-				</data>
+				<data>PQAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -207,15 +199,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -223,15 +211,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PYsZ1BE=
-				</data>
+				<data>PYsZ1BE=</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				PZII7BA=
-				</data>
+				<data>PZII7BA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -239,15 +223,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PYQZ1BE=
-				</data>
+				<data>PYQZ1BE=</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				PQAAAAA=
-				</data>
+				<data>PQAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -255,15 +235,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PYoZ1BE=
-				</data>
+				<data>PYoZ1BE=</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				PQAAAAA=
-				</data>
+				<data>PQAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -271,15 +247,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				LnhtbC56bA==
-				</data>
+				<data>LnhtbC56bA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				LnptbC56bA==
-				</data>
+				<data>LnptbC56bA==</data>
 			</dict>
 		</array>
 	</dict>
