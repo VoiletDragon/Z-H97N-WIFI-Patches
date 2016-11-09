@@ -1,4 +1,4 @@
-Ive done some Patches for both Z97N-WIFI & H97N-WIFI. I have patched LPC for AppleLPC, USB to keep inside the 15 Port Restrictor in 10.11+. Native Powermanagement, USB 3 works with full speed and current. SSDT-HACK is for Simulating OS X. With all SSDT injectors this machine is fully functional with 10.11+.
+Ive done some Patches for both Z97N-WIFI & H97N-WIFI. I have patched LPC for AppleLPC, USB to keep inside the 15 Port Restrictor in 10.11+. Native Powermanagement, USB 3 works with full speed and current. SSDT-HACK is for Simulating OS X. With all SSDT injectors this machine is fully functional with 10.11+. Added SSDT-MCHC, SSDT-SMBUS and SSDT-USB. SSDT-UIAC has been replaced with SSDT-USB.
 
 Credits to RehabMan for his support on this project. 
 
