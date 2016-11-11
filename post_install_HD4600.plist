@@ -16,11 +16,11 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
+					<string>change XWAK to ZWAK</string>
 					<key>Find</key>
-					<data>U0FUMA==</data>
+					<data>WFdBSw==</data>
 					<key>Replace</key>
-					<data>U0FUQQ==</data>
+					<data>WldBSw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -31,6 +31,14 @@
 					<data>X09TSQ==</data>
 					<key>Replace</key>
 					<data>WE9TSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Find</key>
+					<data>U0FUMA==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
