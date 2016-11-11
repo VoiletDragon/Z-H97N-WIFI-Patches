@@ -16,6 +16,14 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change XWAK to ZWAK</string>
+					<key>Find</key>
+					<data>WFdBSw==</data>
+					<key>Replace</key>
+					<data>WldBSw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change SAT0 to SATA</string>
 					<key>Find</key>
 					<data>U0FUMA==</data>
