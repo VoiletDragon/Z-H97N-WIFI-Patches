@@ -16,11 +16,19 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change XWAK to ZWAK</string>
+					<string>change _DSM to XDSM</string>
 					<key>Find</key>
-					<data>WFdBSw==</data>
+					<data>X0RTTQ==</data>
 					<key>Replace</key>
-					<data>WldBSw==</data>
+					<data>WERTTQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(XWAK,0,S) to ZWAK</string>
+					<key>Find</key>
+					<data>WFdBSwg=</data>
+					<key>Replace</key>
+					<data>WldBSwg=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
