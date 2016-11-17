@@ -42,19 +42,23 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Find</key>
-					<data>U0FUMA==</data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U0FUMA==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -66,13 +70,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>CpuPM</string>
+				<string>Cpu0Ist</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>CpuPM</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -91,6 +95,8 @@
 		<false/>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
+		<key>DefaultVolume</key>
+		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
@@ -149,8 +155,8 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>Windows</string>
 			<string>\EFI\BOOT\BOOTX64.EFI</string>
+			<string>Windows</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -185,19 +191,9 @@
 	<dict>
 		<key>Inject</key>
 		<dict>
-			<key>ATI</key>
-			<false/>
 			<key>Intel</key>
-			<true/>
-			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>InjectEDID</key>
-		<false/>
-		<key>NvidiaSingle</key>
-		<false/>
-		<key>ig-platform-id</key>
-		<string>0x0d220003</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -219,9 +215,19 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>10.10-Azul-Port_0x5-DP2HDMI</string>
-				<key>Disabled</key>
-				<false/>
+				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
+				<key>Find</key>
+				<data>AQAAdRc=</data>
+				<key>MatchOS</key>
+				<string>10.10.x,10.11.x</string>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>AQAA6xc=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t2-10.10-10.11-Azul-Port_0x5-DP2HDMI</string>
 				<key>Find</key>
 				<data>AQUJAAAEAACHAAAA</data>
 				<key>Name</key>
@@ -231,95 +237,39 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.10-Azul-Port_0x6-DP2HDMI</string>
-				<key>Find</key>
-				<data>AgQKAAAEAACHAAAA</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>AgQSAAAIAAAGAAAA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10-Azul-Port_0x7-DP2HDMI</string>
-				<key>Find</key>
-				<data>AwYIAAAEAAARAAAA</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>AwYSAAAIAAAGAAAA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x11d4198a to 0</string>
+				<string>t1-10.11-AppleHDA/Realtek ALC...</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>PYoZ1BE=</data>
+				<data>gxnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>PQAAAAA=</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ALC892 AppleHDA (#3 of 3 new in 10.11, credit lisai9093)</string>
+				<string>t1-10.9-10.12-AppleHDA/Realtek ALC892</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>PYMZ1BE=</data>
+				<data>ixnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>PQAAAAA=</data>
+				<data>kgjsEA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ALC892 AppleHDA (#1 of 3)</string>
+				<string>t1-AppleHDA/Resources/xml&gt;zml</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>PYQZ1BE=</data>
+				<data>eG1sLnps</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>PQAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>RXh0ZXJuYWw=</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>SW50ZXJuYWw=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ALC892 AppleHDA (#2 of 3)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>PYsZ1BE=</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>PZII7BA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleHDA .xml.zl to .zml.zl</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>LnhtbC56bA==</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>LnptbC56bA==</data>
+				<data>em1sLnps</data>
 			</dict>
 		</array>
 	</dict>
@@ -337,9 +287,9 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM142.88Z.0118.B00.1309031249</string>
+		<string>IM141.88Z.0118.B00.1309031248</string>
 		<key>Board-ID</key>
-		<string>Mac-27ADBB7B4CEE8E61</string>
+		<string>Mac-031B6874CF7F642A</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
@@ -355,7 +305,7 @@
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>iMac14,2</string>
+		<string>iMac14,1</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
@@ -364,7 +314,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
