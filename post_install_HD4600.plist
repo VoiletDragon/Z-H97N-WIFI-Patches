@@ -214,6 +214,26 @@
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AwYIAAAEAAARAAAA</data>
+				<key>Replace</key>
+				<data>AwYSAAAIAAAGAAAA</data>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x7-DP2HDMI</string>
+			</dict>
+			<dict>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AgQKAAAEAACHAAAA</data>
+				<key>Replace</key>
+				<data>AgQSAAAIAAAGAAAA</data>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x6-DP2HDMI</string>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
 				<key>Find</key>
