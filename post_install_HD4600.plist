@@ -214,6 +214,66 @@
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>AppleHDA .xml.zl to .zml.zl</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>LnhtbC56bA==</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>LnptbC56bA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#2 of 3)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>PYsZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PZII7BA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#1 of 3)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>PYQZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#3 of 3 new in 10.11, credit lisai9093)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>PYMZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x11d4198a to 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>PYoZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
+			</dict>
+			<dict>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Find</key>
@@ -254,42 +314,6 @@
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>AQUSAAAIAAAGAAAA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.11-AppleHDA/Realtek ALC...</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>gxnUEQ==</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.9-10.12-AppleHDA/Realtek ALC892</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>ixnUEQ==</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>kgjsEA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-AppleHDA/Resources/xml&gt;zml</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>eG1sLnps</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>em1sLnps</data>
 			</dict>
 		</array>
 	</dict>
