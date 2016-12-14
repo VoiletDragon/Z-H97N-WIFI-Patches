@@ -3,61 +3,71 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>10K549</string>
+	<string>15E65</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>AppleIntelE1000e</string>
+	<string>IntelMausiEthernet</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.insanelymac.driver.AppleIntelE1000e</string>
+	<string>com.insanelymac.IntelMausiEthernet</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AppleIntelE1000e</string>
+	<string>IntelMausiEthernet</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.3.3</string>
+	<string>2.1.0d5</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>3.3.3</string>
+	<string>2.1.0d5</string>
 	<key>DTCompiler</key>
-	<string></string>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>10M2518</string>
+	<string>7D175</string>
 	<key>DTPlatformVersion</key>
-	<string>PG</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>10M2518</string>
+	<string>15E60</string>
 	<key>DTSDKName</key>
-	<string>macosx10.6</string>
+	<string>macosx10.11</string>
 	<key>DTXcode</key>
-	<string>0400</string>
+	<string>0730</string>
 	<key>DTXcodeBuild</key>
-	<string>10M2518</string>
+	<string>7D175</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>e1000e</key>
+		<key>IntelMausi</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.insanelymac.driver.AppleIntelE1000e</string>
-			<key>E1000_CTRL_TFCE</key>
-			<true/>
-			<key>E1000_DEFAULT_RXD</key>
-			<integer>256</integer>
-			<key>E1000_DEFAULT_TXD</key>
-			<integer>256</integer>
+			<string>com.insanelymac.IntelMausiEthernet</string>
+			<key>Driver_Version</key>
+			<string>2.1.0d5</string>
 			<key>IOClass</key>
-			<string>AppleIntelE1000e</string>
+			<string>IntelMausi</string>
 			<key>IOPCIMatch</key>
-			<string>0x153b8086 0x15598086 0x155a8086 0x15a08086 0x15a18086 0x15a28086 0x15a38086 0x10968086 0x10988086 0x10ba8086 0x10bb8086 0x10cc8086 0x10cd8086 0x10ce8086 0x10de8086 0x10df8086 0x15258086 0x15018086 0x10498086 0x104a8086 0x104b8086 0x104c8086 0x104d8086 0x10c48086 0x10c58086 0x10bd8086 0x10bf8086 0x10c08086 0x10c28086 0x10c38086 0x10cb8086 0x10e58086 0x10f58086 0x294c8086 0x105e8086 0x105f8086 0x10608086 0x10a48086 0x10a58086 0x10bc8086 0x10d58086 0x10d98086 0x10da8086 0x107d8086 0x107e8086 0x107f8086 0x10b98086 0x108b8086 0x108c8086 0x109a8086 0x10d38086 0x10ea8086 0x10eb8086 0x10ef8086 0x10f08086 0x15028086 0x15038086 0x150c8086 0x156f8086 0x15708086 0x15b78086 0x15b88086 0x15b98086 0x15D78086 0x15D88086 0x15E38086 0x15D68086</string>
+			<string>0x10EA8086 0x10EB8086 0x10EF8086 0x10F08086 0x15028086 0x15038086 0x153A8086 0x153B8086 0x155A8086 0x15598086 0x15A08086 0x15A18086 0x15A28086 0x15A38086 0x156F8086 0x15708086 0x15B78086 0x15B88086</string>
+			<key>IOProbeScore</key>
+			<integer>1000</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
-			<key>NETIF_F_TSO</key>
-			<false/>
+			<key>enableCSO6</key>
+			<true/>
+			<key>enableTSO4</key>
+			<true/>
+			<key>enableTSO6</key>
+			<true/>
+			<key>maxIntrRate</key>
+			<integer>7000</integer>
 		</dict>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 Laura Müller. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IONetworkingFamily</key>
