@@ -207,6 +207,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ALC892 AppleHDA (#3 of 3 new in 10.11, credit lisai9093)</string>
 				<key>Disabled</key>
 				<false/>
@@ -313,7 +325,7 @@
 		<key>ProductName</key>
 		<string>iMac14,2</string>
 		<key>Trust</key>
-		<false/>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
