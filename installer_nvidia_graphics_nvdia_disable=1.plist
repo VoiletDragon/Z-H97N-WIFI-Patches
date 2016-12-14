@@ -216,7 +216,7 @@
 		<key>ProductName</key>
 		<string>iMac14,2</string>
 		<key>Trust</key>
-		<false/>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
