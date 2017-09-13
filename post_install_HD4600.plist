@@ -17,6 +17,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
@@ -25,6 +27,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(XWAK,0,S) to ZWAK</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>WFdBSwg=</data>
 					<key>Replace</key>
@@ -42,6 +46,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U0FUMA==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
@@ -52,13 +66,19 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
+					<string>change HECI to IMEI</string>
 					<key>Find</key>
-					<data>U0FUMA==</data>
+					<data>SEVDSQ==</data>
 					<key>Replace</key>
-					<data>U0FUQQ==</data>
+					<data>SU1FSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change B0D3 to HDAU</string>
+					<key>Find</key>
+					<data>QjBEMw==</data>
+					<key>Replace</key>
+					<data>SERBVQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -70,13 +90,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>CpuPM</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>CpuPM</string>
+				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -96,7 +116,7 @@
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
-		<string>Macintosh HD</string>
+		<string></string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
@@ -116,7 +136,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>1</string>
+			<string></string>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -185,15 +205,21 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>bootcamp</string>
+		<string></string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
 		<dict>
+			<key>ATI</key>
+			<false/>
 			<key>Intel</key>
+			<true/>
+			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>NvidiaSingle</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -215,6 +241,48 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>change 15 port limit to 20 in XHCI kext (9-series)</string>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Find</key>
+				<data>g72M/v//EA==</data>
+				<key>Replace</key>
+				<data>g72M/v//FQ==</data>
+			</dict>
+			<dict>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AQUJAAAEAACHAAAA</data>
+				<key>Replace</key>
+				<data>AQUSAAAIAAAGAAAA</data>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x5-DP2HDMI</string>
+			</dict>
+			<dict>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AgQKAAAEAACHAAAA</data>
+				<key>Replace</key>
+				<data>AgQSAAAIAAAGAAAA</data>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x6-DP2HDMI</string>
+			</dict>
+			<dict>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AwYIAAAEAAARAAAA</data>
+				<key>Replace</key>
+				<data>AwYSAAAIAAAGAAAA</data>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x7-DP2HDMI</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
@@ -224,6 +292,46 @@
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x11d4198a to 0</string>
+				<key>Find</key>
+				<data>PYoZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#3 of 3 new in 10.11, credit lisai9093)</string>
+				<key>Find</key>
+				<data>PYMZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#2 of 3)</string>
+				<key>Find</key>
+				<data>PYsZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PZII7BA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC892 AppleHDA (#1 of 3)</string>
+				<key>Find</key>
+				<data>PYQZ1BE=</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>PQAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -237,96 +345,6 @@
 				<key>Replace</key>
 				<data>LnptbC56bA==</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ALC892 AppleHDA (#2 of 3)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>PYsZ1BE=</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>PZII7BA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ALC892 AppleHDA (#1 of 3)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>PYQZ1BE=</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>PQAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ALC892 AppleHDA (#3 of 3 new in 10.11, credit lisai9093)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>PYMZ1BE=</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>PQAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x11d4198a to 0</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>PYoZ1BE=</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>PQAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Find</key>
-				<data>AwYIAAAEAAARAAAA</data>
-				<key>Replace</key>
-				<data>AwYSAAAIAAAGAAAA</data>
-				<key>Comment</key>
-				<string>10.10-Azul-Port_0x7-DP2HDMI</string>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Find</key>
-				<data>AgQKAAAEAACHAAAA</data>
-				<key>Replace</key>
-				<data>AgQSAAAIAAAGAAAA</data>
-				<key>Comment</key>
-				<string>10.10-Azul-Port_0x6-DP2HDMI</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
-				<key>Find</key>
-				<data>AQAAdRc=</data>
-				<key>MatchOS</key>
-				<string>10.10.x,10.11.x</string>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>AQAA6xc=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t2-10.10-10.11-Azul-Port_0x5-DP2HDMI</string>
-				<key>Find</key>
-				<data>AQUJAAAEAACHAAAA</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>AQUSAAAIAAAGAAAA</data>
-			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -338,34 +356,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>09/03/2013</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>IM141.88Z.0118.B00.1309031248</string>
-		<key>Board-ID</key>
-		<string>Mac-031B6874CF7F642A</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>13</string>
-		<key>Family</key>
-		<string>iMac</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>iMac14,1</string>
+		<string>iMac14,2</string>
 		<key>Trust</key>
 		<true/>
-		<key>Version</key>
-		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
