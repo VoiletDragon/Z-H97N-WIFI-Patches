@@ -17,7 +17,7 @@
                     })
                 }
 
-                Return (Package (0x10)
+                Return (Package (0x0E)
                 {
                     "AAPL,slot-name", 
                     "Built In", 
@@ -38,17 +38,11 @@
                     "layout-id", 
                     Buffer (0x04)
                     {
-                         0x01, 0x00, 0x00, 0x00                         
+                         0x03, 0x00, 0x00, 0x00                         
                     }, 
 
                     "PinConfigurations", 
                     Buffer (Zero) {}, 
-                    "MaximumBootBeepVolume", 
-                    Buffer (One)
-                    {
-                         0x40                                           
-                    }, 
-
                     "hda-gfx", 
                     Buffer (0x0A)
                     {
